@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p.position {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .card p.description {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="team-container">
+        <div class="card">
+            <img src="https://i.postimg.cc/15rBTBm1/Foto-Alejandro-Sosa.png" alt="Foto de miembro del equipo">
+            <div class="card-content">
+                <h3>Juan Pérez</h3>
+                <p class="position">CEO</p>
+                <p class="description">Lidera la empresa con pasión y visión innovadora.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/280x180" alt="Foto de miembro del equipo">
+            <div class="card-content">
+                <h3>María López</h3>
+                <p class="position">COO</p>
+                <p class="description">Gestiona operaciones para optimizar la eficiencia.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/280x180" alt="Foto de miembro del equipo">
+            <div class="card-content">
+                <h3>Ana García</h3>
+                <p class="position">CTO</p>
+                <p class="description">Encargada de la tecnología y estrategia digital.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/280x180" alt="Foto de miembro del equipo">
+            <div class="card-content">
+                <h3>Carlos Díaz</h3>
+                <p class="position">CMO</p>
+                <p class="description">Crea estrategias de marketing para expandir la marca.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
