@@ -17,6 +17,8 @@ Including another URLconf
 from django.urls import path
 from AppCoder import views
 from AppCoder import views_clases
+from django.contrib.auth.views import LogoutView
+
 
 urlpatterns = [
     path('', views.inicio, name="Inicio"),
@@ -27,7 +29,10 @@ urlpatterns = [
     path('form-comun/', views.form_comun, name="Form-Comun"),
     path('form-con-api/', views.form_con_api, name="Form-Con-Api"),
     path('buscar-form-con-api/', views.buscar_form_con_api, name="Buscar-Form-Con-Api"),
-    path('login/', views_clases.login_request, name="Login")
+    path('login/', views_clases.login_request, name="Login"),
+    path('register/', views.register, name='Register'),
+    path('logout/', LogoutView.as_view(template_name='AppCoder/logout.html'), name='Logout'),
+
 ]
 
 urls_vistas_clases = [
